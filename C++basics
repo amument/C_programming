@@ -402,3 +402,4 @@ x %= 3; // equivalent to x = x % 3, x will be 0
 Simple type conversion
 
 
+Type conversion, or typecasting, is the process of changing an entity from one data type to another. It is used to convert lower data types (like integer) to higher data types (like float) or vice versa. It can also be used to convert non-numeric types (like strings) to numeric data types (like integers).
