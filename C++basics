@@ -402,4 +402,40 @@ x %= 3; // equivalent to x = x % 3, x will be 0
 Simple type conversion
 
 
-Type conversion, or typecasting, is the process of changing an entity from one data type to another. It is used to convert lower data types (like integer) to higher data types (like float) or vice versa. It can also be used to convert non-numeric types (like strings) to numeric data types (like integers).
+Type conversion is the process of changing the data type of a variable from one type to another. Simple type conversion refers to converting between data types that are similar or compatible with each other. For example, converting an integer to a float or a string to an integer.
+
+Here are some examples of simple type conversion in Python:
+
+1. Converting an integer to a float:
+
+```python
+a = 10
+b = float(a)
+print(b)  # Output: 10.0
+```
+
+2. Converting a float to an integer:
+
+```python
+a = 3.14
+b = int(a)
+print(b)  # Output: 3
+```
+
+3. Converting a string to an integer:
+
+```python
+a = "10"
+b = int(a)
+print(b)  # Output: 10
+```
+
+4. Converting a string to a float:
+
+```python
+a = "3.14"
+b = float(a)
+print(b)  # Output: 3.14
+```
+
+In each of these examples, the built-in functions `float()` and `int()` are used to convert the data type of the variable. The original value of the variable is not changed, but a new value of the desired data type is created and assigned to a new variable.
