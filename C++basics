@@ -1,0 +1,404 @@
+
+Introduction to C++ programming
+
+
+
+
+C++ is a high-level programming language that was developed by Bjarne Stroustrup in 1983. It is an extension of the C programming language and adds features such as object-oriented programming, templates, and exceptions.
+
+C++ is widely used in many industries, including gaming, finance, and scientific computing. It is also popular in academia and is often taught as an introductory programming language.
+
+The syntax of C++ is similar to that of C, but it includes additional keywords and syntax for object-oriented programming. C++ programs are compiled into machine code, making them fast and efficient.
+
+Some common features of C++ include:
+
+- Object-oriented programming: C++ supports encapsulation, inheritance, and polymorphism.
+- Templates: C++ templates allow you to write generic code that can be used with different data types.
+- Standard Template Library (STL): The STL provides a collection of reusable data structures and algorithms.
+- Exception handling: C++ allows you to handle errors and exceptions in a structured manner.
+
+Overall, C++ is a powerful and versatile programming language that is widely used for developing complex software applications.
+
+
+ 
+Preprocessor directives (#)
+
+
+
+
+Preprocessor directives are lines of code that begin with a pound sign (#) and are processed by the preprocessor before the program is compiled. They are used to include header files, define constants, and perform other tasks that are necessary before the program is executed.
+
+Some common preprocessor directives in C++ programming include:
+
+- #include: This directive is used to include header files in the program. Header files contain declarations for functions, variables, and other elements that are used in the program.
+
+- #define: This directive is used to define constants or macros. Constants are values that do not change during the execution of the program, while macros are pieces of code that are replaced by the preprocessor with other code.
+
+- #ifdef/#ifndef: These directives are used to conditionally compile code based on whether a macro has been defined or not. #ifdef checks if a macro has been defined, while #ifndef checks if a macro has not been defined.
+
+- #pragma: This directive is used to provide instructions to the compiler or linker. For example, #pragma once is used to ensure that a header file is only included once in the program.
+
+Preprocessor directives are an important part of C++ programming, as they allow for the inclusion of external code and the definition of constants and macros that can be used throughout the program.
+
+
+
+ 
+C++ keywords (reserved words)
+
+
+Keywords in C++ are predefined reserved words that have a specific meaning and cannot be used as variable names or identifiers. Some common keywords in C++ include:
+
+- auto: Specifies that a variable should have automatic storage duration.
+- break: Terminates the current loop or switch statement.
+- case: Marks a specific value in a switch statement.
+- const: Specifies that a variable is constant and cannot be modified.
+- continue: Skips the current iteration of a loop.
+- default: Specifies the default case in a switch statement.
+- do: Marks the beginning of a do-while loop.
+- double: Specifies a double-precision floating-point number.
+- else: Marks the else clause in an if statement.
+- enum: Defines an enumeration type.
+- extern: Declares a variable or function as being defined elsewhere.
+- false: Represents the Boolean value false.
+- float: Specifies a single-precision floating-point number.
+- for: Marks the beginning of a for loop.
+- goto: Transfers control to a labeled statement.
+- if: Marks the beginning of an if statement.
+- int: Specifies an integer value.
+- long: Specifies a long integer value.
+- register: Specifies that a variable should be stored in a register instead of memory.
+- return: Returns a value from a function.
+- short: Specifies a short integer value.
+- signed: Specifies a signed integer value.
+- sizeof: Returns the size in bytes of a data type or variable.
+- static: Specifies that a variable or function has static storage duration.
+- struct: Defines a structure type.
+- switch: Marks the beginning of a switch statement.
+- true: Represents the Boolean value true.
+- typedef: Defines a new type name.
+- union: Defines a union type.
+- unsigned: Specifies an unsigned integer value.
+- void: Specifies that a function does not return a value.
+- volatile: Specifies that a variable may be modified by external factors.
+- while: Marks the beginning of a while loop.
+
+
+
+
+ 
+C++ identifiers
+
+
+Identifiers in C++ are user-defined names given to variables, functions, classes, and other entities. These names must follow certain rules and conventions, such as:
+
+- Identifiers can only contain letters (uppercase or lowercase), digits, and underscores.
+- The first character of an identifier must be a letter or underscore.
+- Identifiers cannot be a keyword or a predefined name in C++.
+- Identifiers are case-sensitive, meaning that uppercase and lowercase letters are considered distinct.
+
+Examples of valid identifiers in C++ include:
+
+- myVariable
+- some_function
+- MyClass
+- _privateVariable
+- num1
+
+Examples of invalid identifiers in C++ include:
+
+- 3rdVariable (cannot start with a digit)
+- class (reserved keyword)
+- my-variable (cannot contain hyphens)
+- MyClass and myclass (different cases are treated as different identifiers)
+
+
+
+ 
+ 
+C++ Comments
+
+
+
+
+In C++ programming, comments are used to add notes or explanations within a program's code. These comments are ignored by the compiler and do not affect the program's execution.
+
+There are two types of comments in C++:
+
+1. Single-line comments: These are comments that begin with two forward slashes (//) and continue until the end of the line. Single-line comments are often used to provide brief explanations or notes on specific lines of code.
+
+Example:
+
+int x = 5; // initialize variable x to 5
+
+2. Multi-line comments: These are comments that begin with /* and end with */. Multi-line comments can span multiple lines and are often used to provide longer explanations or to temporarily disable blocks of code.
+
+Example:
+
+/*
+This is a multi-line comment
+that spans multiple lines.
+It can be used to provide longer explanations
+or to temporarily disable code.
+*/
+
+Comments can be very useful for improving the readability and maintainability of a program's code. By adding comments, programmers can explain their thought process and make it easier for others to understand and modify their code.
+
+
+
+
+Variables
+
+
+ a variable is a named storage location that holds a value. The value stored in a variable can be changed or accessed throughout the program's execution.
+
+In C++, variables must be declared before they can be used. The declaration specifies the variable's name and data type. 
+
+Example:
+
+int x; // declares an integer variable named x
+
+Once a variable is declared, it can be assigned a value using the assignment operator (=).
+
+Example:
+
+x = 5; // assigns the value 5 to variable x
+
+Variables can also be initialized during declaration by assigning a value to them.
+
+Example:
+
+int y = 10; // declares and initializes an integer variable named y with the value 10
+
+C++ supports various data types for variables, including integers, floating-point numbers, characters, and booleans. Each data type has its own range of values and storage requirements.
+
+Variables play a crucial role in programming as they allow programmers to store and manipulate data throughout the program's execution. They are often used to represent inputs, outputs, intermediate calculations, and other program elements.
+
+
+
+
+
+Variables declaration
+
+
+Variables must be declared before they can be used in C++. The declaration specifies the variable's name and data type. 
+
+Syntax for variable declaration:
+data_type variable_name;
+
+Example:
+int age;
+float salary;
+char grade;
+
+Multiple variables of the same data type can be declared in a single statement by separating their names with commas.
+
+Example:
+int a, b, c;
+
+Variables can also be initialized during declaration by assigning a value to them.
+
+Syntax for variable initialization:
+data_type variable_name = initial_value;
+
+Example:
+int x = 10;
+float y = 3.14;
+char z = 'A';
+
+
+
+
+
+Basic data types
+
+
+C++ has several basic data types that can be used to declare variables:
+
+1. Integer (int): Used to store whole numbers, both positive and negative.
+
+2. Floating-point (float and double): Used to store decimal numbers with varying precision.
+
+3. Character (char): Used to store a single character, such as a letter or symbol.
+
+4. Boolean (bool): Used to store true or false values.
+
+5. Void: Used to indicate that a function does not return a value.
+
+6. Wide character (wchar_t): Used to store wide characters, such as those used in non-English languages.
+
+7. Unsigned integer (unsigned int): Used to store positive whole numbers only.
+
+8. Short integer (short): Used to store small whole numbers.
+
+9. Long integer (long): Used to store large whole numbers.
+
+It is important to choose the appropriate data type for a variable based on the values it will hold and the operations that will be performed on it.
+
+
+
+
+
+
+Character variables
+
+
+Character variables (char) are used to store a single character, such as a letter, number, or symbol. They are typically used in situations where only one character needs to be stored or manipulated, such as in strings or arrays of characters.
+
+In C++, characters are represented using their ASCII (American Standard Code for Information Interchange) codes. For example, the ASCII code for the letter 'A' is 65, and the ASCII code for the space character is 32.
+
+To declare a character variable in C++, use the 'char' keyword followed by the variable name:
+
+```
+char myChar;
+```
+
+To assign a value to a character variable, use single quotes around the character:
+
+```
+myChar = 'A';
+```
+
+You can also initialize a character variable when you declare it:
+
+```
+char myChar = 'A';
+```
+
+Character variables can also be used with various operations and functions, such as concatenation, comparison, and conversion to other data types.
+
+
+
+
+
+
+Characters & numbers
+
+
+In C++, characters and numbers are closely related because characters are represented using their ASCII codes, which are essentially numeric values. This means that you can perform arithmetic operations on character variables just like you would with numeric variables.
+
+For example, you can add or subtract a number from a character variable:
+
+```
+char myChar = 'A';
+myChar = myChar + 1; // myChar now stores 'B'
+```
+
+You can also compare character variables using relational operators such as '<', '>', and '==':
+
+```
+char myChar1 = 'A';
+char myChar2 = 'B';
+if (myChar1 < myChar2) {
+  // do something
+}
+```
+
+Finally, you can convert a character variable to its corresponding ASCII code using type casting:
+
+```
+char myChar = 'A';
+int asciiCode = (int)myChar; // asciiCode now stores 65
+```
+
+
+
+
+
+
+
+Input/output statements
+
+
+In C++, input/output (I/O) statements allow you to interact with the user and display information on the screen. The most common input statement is "cin", which reads input from the user via the keyboard:
+
+```
+int myNumber;
+cout << "Enter a number: ";
+cin >> myNumber;
+```
+
+In this example, the "cout" statement displays the message "Enter a number: " on the screen, and the "cin" statement waits for the user to enter a number and stores it in the variable "myNumber".
+
+The most common output statement is "cout", which displays output on the screen:
+
+```
+int myNumber = 42;
+cout << "The answer is: " << myNumber << endl;
+```
+
+In this example, the "cout" statement displays the message "The answer is: 42" on the screen. The "endl" statement adds a newline character to the output, which moves the cursor to the next line.
+
+You can also use formatting options to control how the output is displayed:
+
+```
+double myValue = 3.14159;
+cout << fixed << setprecision(2) << myValue << endl;
+```
+
+In this example, the "fixed" statement specifies that the output should be displayed with a fixed number of decimal places, and the "setprecision(2)" statement specifies that the output should be rounded to 2 decimal places. The result is that the value of "myValue" is displayed as "3.14".
+
+
+
+
+
+Operators
+
+
+In C++, operators are symbols or keywords that perform operations on one or more operands (variables or values). The basic arithmetic operators include:
+
+- Addition: "+"
+- Subtraction: "-"
+- Multiplication: "*"
+- Division: "/"
+- Modulus (remainder): "%"
+
+For example:
+
+```
+int x = 10;
+int y = 3;
+int z = x + y; // z will be 13
+int w = x % y; // w will be 1
+```
+
+In addition to arithmetic operators, C++ also has comparison operators, logical operators, bitwise operators, and assignment operators, among others. Here are some examples:
+
+- Comparison operators: "<", ">", "<=", ">=", "==", "!=", which compare two values and return a Boolean (true or false) result. For example:
+
+```
+int x = 10;
+int y = 3;
+bool result = x > y; // result will be true
+```
+
+- Logical operators: "&&" (and), "||" (or), "!" (not), which combine Boolean expressions and return a Boolean result. For example:
+
+```
+bool a = true;
+bool b = false;
+bool result1 = a && b; // result1 will be false
+bool result2 = !a || b; // result2 will be true
+```
+
+- Bitwise operators: "&" (and), "|" (or), "^" (xor), "~" (not), "<<", ">>", which manipulate the individual bits of integer values. For example:
+
+```
+int x = 5; // binary: 101
+int y = 3; // binary: 011
+int result1 = x & y; // result1 will be 1 (binary: 001)
+int result2 = x ^ y; // result2 will be 6 (binary: 110)
+```
+
+- Assignment operators: "=", "+=", "-=", "*=", "/=", "%=", "&=", "|=", "^=", "<<=", ">>=", which assign a new value to a variable and perform an operation at the same time. For example:
+
+```
+int x = 10;
+x += 5; // equivalent to x = x + 5, x will be 15
+x %= 3; // equivalent to x = x % 3, x will be 0
+```
+
+
+
+Simple type conversion
+
+
