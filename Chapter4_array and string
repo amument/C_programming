@@ -1,0 +1,413 @@
+Introduction to arrays
+
+
+Arrays are a fundamental data structure in programming that allow you to store and manipulate collections of values.
+An array is essentially a list of values, where each value is assigned a unique index or position within the array. 
+This makes it easy to access and manipulate individual values within the array. 
+Arrays can be used to store a wide range of data types, including numbers, strings, and objects. 
+They are commonly used in programming for tasks such as sorting, searching, and storing data. 
+Understanding how to work with arrays is an essential skill for any programmer.
+
+
+Types of array
+
+
+One Dimensional Array
+Multi Dimensional Array
+
+
+
+
+One dimensional array
+
+
+A one-dimensional array is a type of array where the values are stored in a linear sequence, with each value assigned a unique index. 
+This means that the array can be thought of as a single row or column of values. 
+
+To create a one-dimensional array in most programming languages, you simply declare the array variable and specify the number of elements it should contain. 
+For example, in JavaScript:
+
+```
+let myArray = [1, 2, 3, 4, 5];
+```
+
+This creates an array with five elements, each of which can be accessed using its index. 
+For example, to access the third element:
+
+```
+console.log(myArray[2]); // Output: 3
+```
+
+One-dimensional arrays can be useful for storing and manipulating data that has a simple linear structure, such as a list of numbers or names. 
+However, for more complex data structures, multi-dimensional arrays may be necessary.
+
+
+
+
+Array initialization
+
+
+
+Array initialization is the process of assigning initial values to the elements of an array when it is created. 
+This can be done in several ways depending on the programming language.
+
+One common method is to use a list of values enclosed in square brackets, separated by commas. 
+For example, in Python:
+
+```
+my_array = [1, 2, 3, 4, 5]
+```
+
+In this case, the array is created with five elements and each element is assigned a value from the list.
+
+Another way to initialize an array is to use a loop to assign values to each element. For example, in Java:
+
+```
+int[] myArray = new int[5];
+for (int i = 0; i < 5; i++) {
+    myArray[i] = i + 1;
+}
+```
+
+In this case, an array with five elements is created and a for loop is used to assign values to each element based on the loop index.
+
+Some programming languages also allow for arrays to be initialized with default values. For example, in C++:
+
+```
+int myArray[5] = {0};
+```
+
+In this case, an array with five elements is created and each element is initialized to 0 by default.
+
+Overall, array initialization is an important step in working with arrays as it ensures that the elements have valid values before they are accessed or manipulated.
+
+
+
+
+Accessing array elements
+
+
+Once an array is initialized, its elements can be accessed using their index values. The index value of the first element in most programming languages is 0. 
+For example, to access the first element of an array in Python:
+
+```
+my_array = [1, 2, 3, 4, 5]
+print(my_array[0]) # output: 1
+```
+
+To access the second element, the index value would be 1:
+
+```
+print(my_array[1]) # output: 2
+```
+
+Similarly, to access the first element of an array in Java:
+
+```
+int[] myArray = {1, 2, 3, 4, 5};
+System.out.println(myArray[0]); // output: 1
+```
+
+To access the third element, the index value would be 2:
+
+```
+System.out.println(myArray[2]); // output: 3
+```
+
+It's important to note that attempting to access an element outside the bounds of an array (i.e. using an index value greater than or equal to the array length) can result in an error or unexpected behavior.
+
+1. Accessing the first element of an array in C++:
+
+```
+int myArray[] = {1, 2, 3, 4, 5};
+cout << myArray[0]; // output: 1
+```
+
+2. Accessing the fourth element of an array in JavaScript:
+
+```
+const myArray = [1, 2, 3, 4, 5];
+console.log(myArray[3]); // output: 4
+```
+
+3. Accessing the second element of an array in PHP:
+
+```
+$myArray = array(1, 2, 3, 4, 5);
+echo $myArray[1]; // output: 2
+```
+
+4. Accessing the fifth element of an array in Ruby:
+
+```
+my_array = [1, 2, 3, 4, 5]
+puts my_array[4] # output: 5
+```
+
+
+
+
+Bidimensional array
+
+
+1. Accessing the element in the second row and third column of a bidimensional array in C++:
+
+```
+int myArray[2][3] = {{1, 2, 3}, {4, 5, 6}};
+cout << myArray[1][2]; // output: 6
+```
+
+2. Accessing the element in the first row and second column of a bidimensional array in JavaScript:
+
+```
+const myArray = [[1, 2, 3], [4, 5, 6]];
+console.log(myArray[0][1]); // output: 2
+```
+
+3. Accessing the element in the second row and first column of a bidimensional array in PHP:
+
+```
+$myArray = array(array(1, 2, 3), array(4, 5, 6));
+echo $myArray[1][0]; // output: 4
+```
+
+4. Accessing the element in the first row and third column of a bidimensional array in Ruby:
+
+```
+my_array = [[1, 2, 3], [4, 5, 6]]
+puts my_array[0][2] # output: 3
+```
+
+
+
+
+Initializing two dimensional arrays
+
+
+1. Initializing a bidimensional array with values in C++:
+
+```
+int myArray[2][3] = {{1, 2, 3}, {4, 5, 6}};
+```
+
+2. Initializing a bidimensional array with values in JavaScript:
+
+```
+const myArray = [[1, 2, 3], [4, 5, 6]];
+```
+
+3. Initializing a bidimensional array with values in PHP:
+
+```
+$myArray = array(array(1, 2, 3), array(4, 5, 6));
+```
+
+4. Initializing a bidimensional array with values in Ruby:
+
+```
+my_array = [[1, 2, 3], [4, 5, 6]]
+```
+
+Note: In all of the above examples, we are initializing a bidimensional array with two rows and three columns with the values 1 to 6. 
+The outer square brackets represent the rows and the inner square brackets represent the columns.
+
+
+
+
+
+Accessing element's of two dimensional arrays
+
+
+
+To access an element of a bidimensional array, we need to specify the row index and the column index. 
+For example, to access the element in the second row and third column of the array initialized above:
+
+1. In C++:
+
+```
+int myElement = myArray[1][2]; // myElement will be 6
+```
+
+2. In JavaScript:
+
+```
+const myElement = myArray[1][2]; // myElement will be 6
+```
+
+3. In PHP:
+
+```
+$myElement = $myArray[1][2]; // $myElement will be 6
+```
+
+4. In Ruby:
+
+```
+my_element = my_array[1][2] # my_element will be 6
+```
+
+
+
+Strings 
+
+
+
+String definition
+
+
+A string is a sequence of characters that represent text. It can include letters, numbers, symbols, and spaces. 
+Strings can be declared and initialized in various programming languages using different syntaxes. 
+For example, in C++, a string can be declared using the following syntax:
+
+```
+string myString = "Hello World!";
+```
+
+In JavaScript, a string can be declared using the following syntax:
+
+```
+const myString = "Hello World!";
+```
+
+In PHP, a string can be declared using the following syntax:
+
+```
+$myString = "Hello World!";
+```
+
+In Ruby, a string can be declared using the following syntax:
+
+```
+my_string = "Hello World!"
+```
+
+
+
+Reading a string from the keyboard
+
+
+To read a string from the keyboard in various programming languages, different methods can be used. 
+Here are some examples:
+
+In C++, the `getline()` function can be used to read a string from the keyboard. 
+Here's an example:
+
+```
+#include <iostream>
+#include <string>
+
+int main() {
+  std::string myString;
+  std::cout << "Enter a string: ";
+  std::getline(std::cin, myString);
+  std::cout << "You entered: " << myString << std::endl;
+  return 0;
+}
+```
+
+In JavaScript, the `prompt()` function can be used to read a string from the keyboard. 
+Here's an example:
+
+```
+const myString = prompt("Enter a string:");
+console.log("You entered: " + myString);
+```
+
+In PHP, the `fgets()` function can be used to read a string from the keyboard. 
+Here's an example:
+
+```
+<?php
+$handle = fopen ("php://stdin","r");
+echo "Enter a string: ";
+$myString = fgets($handle);
+echo "You entered: " . $myString;
+?>
+```
+
+In Ruby, the `gets()` function can be used to read a string from the keyboard. 
+Here's an example:
+
+```
+puts "Enter a string:"
+my_string = gets.chomp
+puts "You entered: #{my_string}"
+```
+
+
+
+Some c++ library functions for strings
+
+
+1. `getline()`: Reads a line of text from an input stream and stores it in a string variable.
+2. `length()`: Returns the length of a string.
+3. `substr()`: Returns a substring of a string.
+4. `find()`: Searches for a substring within a string and returns its position.
+5. `replace()`: Replaces a substring within a string with another string.
+6. `erase()`: Deletes a portion of a string.
+7. `insert()`: Inserts a substring into a string at a specified position.
+8. `compare()`: Compares two strings and returns an integer value indicating their relationship (equal, less than, or greater than).
+
+
+
+Pointers
+
+
+It explains that pointers can be difficult for many programmers to understand and use, but that this chapter will attempt to demystify them and provide practical examples of their use. 
+The paragraph lists several common uses of pointers, including accessing array elements, passing arguments to functions, obtaining memory from the system, and creating data structures such as linked lists. 
+The paragraph also notes that while pointers are an important feature of C++ and C, other languages such as Visual Basic and Java do not have them. 
+The paragraph concludes by stating that while pointers are not always necessary, they can be essential for increasing the power of C++, and that this chapter will introduce pointers gradually and cover both basic and complex applications.
+
+
+1. `*`: Dereferences a pointer to access the value it points to.
+2. `&`: Returns the memory address of a variable.
+3. `nullptr`: A null pointer value, indicating that the pointer does not point to a valid memory address.
+4. `new`: Dynamically allocates memory for a variable or array on the heap and returns a pointer to the allocated memory.
+5. `delete`: Frees the memory allocated by `new`.
+6. `const`: Specifies that a pointer points to a constant value and cannot be modified through that pointer.
+7. Pointer arithmetic: Allows incrementing or decrementing a pointer to access neighboring memory addresses.
+8. Pointers to pointers: Allows storing the memory address of a pointer in another pointer variable.
+
+
+
+
+Pointers address in c++
+
+
+In C++, pointers are variables that hold the memory address of another variable or object. 
+The address of a variable can be obtained using the ampersand symbol (&), which is also called the "address-of" operator. 
+For example, if we have an integer variable named "num", we can get its address like this:
+
+```
+int num = 42;
+int* ptr = &num;  // ptr now holds the address of num
+```
+
+In this code, the variable "ptr" is a pointer to an integer (int*), and it is assigned the address of "num" using the "&" operator.
+
+To access the value stored at the memory address pointed to by a pointer, we use the dereference operator (*). For example, we can print the value of "num" by dereferencing "ptr" like this:
+
+```
+std::cout << *ptr << std::endl;  // prints "42"
+```
+
+This code uses the "*" operator to dereference "ptr" and obtain the value stored at the memory address it points to (which is the value of "num").
+
+Pointers can also be used to dynamically allocate memory on the heap using the "new" operator. For example, we can allocate an array of integers like this:
+
+```
+int* arr = new int[10];  // allocates space for 10 integers on the heap
+```
+
+In this code, the "new" operator allocates space for 10 integers on the heap and returns a pointer to the first element of the array. We can access the elements of the array using pointer arithmetic or by dereferencing individual elements:
+
+```
+arr[0] = 1;  // sets the first element to 1
+*(arr + 1) = 2;  // sets the second element to 2
+```
+
+Finally, when we're done with dynamically allocated memory, we need to free it using the "delete" operator:
+
+```
+delete[] arr;  // frees the memory allocated for the array
+```
