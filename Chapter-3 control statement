@@ -239,3 +239,353 @@ else:
 ```
 
 In this example, the program first checks if x is greater than 5. If it is, it prints "x is greater than 5" and then checks if x is equal to 10. If it is, it prints "x is equal to 10". If x is not greater than 5, it prints "x is less than or equal to 5". This allows us to test multiple conditions and execute different blocks of code based on the results of both the outer and inner if statements.
+
+
+
+
+The switch statement
+
+
+The switch statement is a control flow statement in programming that allows a program to execute different code blocks based on the value of a variable or expression. It works by evaluating the value of the expression and then jumping to the corresponding case block. If there is no match, the default block is executed. Here is an example:
+
+let fruit = 'apple';
+
+switch (fruit) {
+  case 'banana':
+    console.log('This is a banana.');
+    break;
+  case 'apple':
+    console.log('This is an apple.');
+    break;
+  case 'orange':
+    console.log('This is an orange.');
+    break;
+  default:
+    console.log('I do not know what fruit this is.');
+}
+
+
+In this example, the switch statement evaluates the value of the fruit variable and jumps to the corresponding case block. Since fruit is set to 'apple', the second case block is executed and the output will be 'This is an apple.'. If fruit was set to 'banana', the first case block would be executed instead.
+
+
+Switch
+
+
+statements are commonly used in situations where there are multiple possible outcomes based on the value of a single variable or expression.
+ They can be more efficient than using multiple if-else statements, especially when there are many possible outcomes.
+
+It is important to note that each case block should end with a break statement, which tells the program to exit the switch statement and continue with the rest of the code.
+ If a break statement is not included, the program will continue executing the following case blocks until it reaches a break statement or the end of the switch statement.
+
+Additionally, the default block is optional and will be executed if none of the case blocks match the value of the expression. It is often used as a catch-all to handle unexpected values or errors.
+
+
+Case
+
+
+statements can also be nested within each other, allowing for more complex decision-making based on multiple variables or expressions.
+
+Overall, switch statements provide a concise and efficient way to handle multiple possible outcomes in a program. 
+However, they should be used appropriately and with caution to ensure that the logic is clear and easy to follow.
+
+
+
+Break
+
+
+
+The "break" keyword is used within switch statements to exit the switch block once a matching case has been found and executed. Without a break statement, the switch statement would continue to evaluate subsequent cases even if they do not match the input value. 
+
+For example, consider the following switch statement:
+
+switch (dayOfWeek) {
+  case 1:
+    console.log("Monday");
+  case 2:
+    console.log("Tuesday");
+  case 3:
+    console.log("Wednesday");
+  case 4:
+    console.log("Thursday");
+  case 5:
+    console.log("Friday");
+}
+
+
+If the input value of "dayOfWeek" is 3, the output would be:
+
+Wednesday
+Thursday
+Friday
+
+
+This is because there are no break statements within each case block, so the switch statement continues to evaluate subsequent cases even after a match has been found.
+
+To fix this issue, we can add a break statement at the end of each case block:
+
+switch (dayOfWeek) {
+  case 1:
+    console.log("Monday");
+    break;
+  case 2:
+    console.log("Tuesday");
+    break;
+  case 3:
+    console.log("Wednesday");
+    break;
+  case 4:
+    console.log("Thursday");
+    break;
+  case 5:
+    console.log("Friday");
+    break;
+}
+
+
+Now, if the input value of "dayOfWeek" is 3, the output would be:
+
+Wednesday
+
+
+Because the switch statement exits once a matching case has been found and executed with the help of the break statement.
+
+
+Default
+
+
+In addition to using case statements, a switch statement can also include a default statement.
+ The default statement is executed if none of the case statements match the input value. 
+
+For example:
+
+switch (fruit) {
+  case "apple":
+    console.log("You chose an apple.");
+    break;
+  case "banana":
+    console.log("You chose a banana.");
+    break;
+  default:
+    console.log("Sorry, we don't have that fruit.");
+    break;
+}
+
+
+If the input value of "fruit" is "orange", the output would be:
+
+Sorry, we don't have that fruit.
+
+
+Because none of the case statements match "orange", the default statement is executed. 
+
+The default statement is optional, but it can be useful for handling unexpected input values.
+
+
+
+The conditional expressions
+
+
+Conditional expressions are an important part of programming languages. 
+They allow the program to make decisions based on certain conditions.
+ In programming, the conditional expression is a statement that evaluates to either true or false. 
+If the statement is true, the program executes one set of instructions, and if it is false, it executes another set of instructions. 
+This is a powerful tool that allows programs to be more efficient and effective.One common use of conditional expressions is in control structures such as loops and if-else statements.
+ These structures allow the program to execute different blocks of code depending on the value of a condition. For example, a loop may continue to execute as long as a certain condition is true, or an if-else statement may execute one block of code if a condition is true and another block of code if it is false.Another important use of conditional expressions is in error handling. 
+Programs can use conditional expressions to check for errors and take appropriate action. For example, if a file cannot be opened, the program can use a conditional expression to check for this error and take appropriate action, such as displaying an error message to the user.In conclusion, conditional expressions are a powerful tool in programming languages. 
+They allow programs to make decisions based on certain conditions, which can make them more efficient and effective.
+ Control structures and error handling are just two examples of how conditional expressions can be used in programming.
+
+
+
+Iteration or looping statement
+
+
+An iteration or looping statement is a programming statement that allows a block of code to be executed repeatedly based on a specific condition or set of conditions.
+ This allows the program to perform tasks repeatedly without having to write the same code multiple times.
+ Common types of iteration statements include for loops, while loops, and do-while loops.
+
+
+
+
+The for loop
+
+
+The for loop is a type of iteration statement that allows a block of code to be executed a specific number of times. It consists of three parts: initialization, condition, and increment/decrement.
+
+The syntax for a for loop is as follows:
+
+for (initialization; condition; increment/decrement) {
+   // block of code to be executed
+}
+
+The initialization part is used to declare and initialize a variable that will be used in the loop. The condition part is used to specify the condition that must be true for the loop to continue executing. The increment/decrement part is used to modify the value of the variable declared in the initialization part.
+
+For example, the following code will print the numbers 1 to 10:
+
+for (int i = 1; i <= 10; i++) {
+   System.out.println(i);
+}
+
+In this code, the variable i is initialized to 1, the loop will continue executing as long as i is less than or equal to 10, and i will be incremented by 1 after each iteration. The System.out.println(i) statement will print the value of i to the console.
+
+
+
+
+The for statement
+
+
+The for statement is a control flow statement in programming languages that allows a block of code to be executed repeatedly for a fixed number of times. It is commonly used when the number of iterations required is known beforehand.
+
+The for statement consists of three parts: initialization, condition, and increment/decrement. The initialization part is executed only once at the beginning of the loop and is used to initialize the loop counter variable. The condition part is evaluated before each iteration of the loop and if it is true, the loop continues to execute. The increment/decrement part is executed after each iteration of the loop and is used to modify the loop counter variable.
+
+The syntax of the for statement is as follows:
+
+for (initialization; condition; increment/decrement) {
+   // block of code to be executed
+}
+
+The initialization part can declare one or more variables and initialize them. The condition part must be a boolean expression that evaluates to either true or false. The increment/decrement part can modify the value of the loop counter variable.
+
+Here's an example of using the for statement to print the numbers from 1 to 10:
+
+for (int i = 1; i <= 10; i++) {
+   System.out.println(i);
+}
+
+In this example, the variable i is initialized to 1, the loop continues to execute as long as i is less than or equal to 10, and i is incremented by 1 after each iteration. The System.out.println(i) statement prints the value of i to the console.
+
+
+
+
+The while loop
+
+
+The while loop is another control flow statement in programming languages that allows a block of code to be executed repeatedly as long as a certain condition is true. It is commonly used when the number of iterations required is not known beforehand or when the condition depends on some external factors.
+
+The while loop consists of only one part: the condition. The condition is evaluated before each iteration of the loop and if it is true, the loop continues to execute. If the condition is false, the loop terminates and the program continues with the next statement after the loop.
+
+The syntax of the while loop is as follows:
+
+while (condition) {
+   // block of code to be executed
+}
+
+The condition part must be a boolean expression that evaluates to either true or false. The block of code inside the while loop can contain any number of statements.
+
+Here's an example of using the while loop to print the numbers from 1 to 10:
+
+int i = 1;
+while (i <= 10) {
+   System.out.println(i);
+   i++;
+}
+
+In this example, the variable i is initialized to 1 outside the loop, the loop continues to execute as long as i is less than or equal to 10, and i is incremented by 1 after each iteration. The System.out.println(i) statement prints the value of i to the console.
+
+
+
+
+The do while statement
+
+
+Another variation of the while loop is the do-while loop. The do-while loop is similar to the while loop, but the condition is evaluated after the block of code has been executed at least once. This means that the block of code inside the loop will always be executed at least once, even if the condition is initially false.
+
+The syntax of the do-while loop is as follows:
+
+do {
+   // block of code to be executed
+} while (condition);
+
+The block of code inside the do-while loop can contain any number of statements. The condition part must be a boolean expression that evaluates to either true or false.
+
+Here's an example of using the do-while loop to ask the user for input until they enter a valid number:
+
+int number;
+Scanner scanner = new Scanner(System.in);
+
+do {
+   System.out.print("Enter a number: ");
+   while (!scanner.hasNextInt()) {
+       System.out.println("That's not a number! Try again.");
+       scanner.next();
+   }
+   number = scanner.nextInt();
+} while (number <= 0);
+
+In this example, the do-while loop first prompts the user to enter a number. The while loop inside the do-while loop checks if the input is not an integer and prompts the user to try again if it's not. Once a valid integer is entered, the do-while loop checks if the number is less than or equal to 0. If it is, the loop continues and prompts the user to enter another number. If it's not, the loop terminates and the program continues with the next statement after the loop.
+
+
+Flow of control 
+
+While versus do while
+
+
+The main difference between the while loop and the do-while loop is that the while loop evaluates the condition before executing the block of code, whereas the do-while loop evaluates the condition after executing the block of code at least once. 
+This means that the while loop may not execute the block of code at all if the condition is initially false, while the do-while loop will always execute the block of code at least once.
+
+Another difference is that the while loop is a pre-test loop, meaning that it tests the condition before entering the loop, while the do-while loop is a post-test loop, meaning that it tests the condition after entering the loop. 
+This can affect the flow of the program and the behavior of certain statements inside the loop.
+
+In general, you should use a while loop when you want to execute a block of code zero or more times, depending on a condition, and use a do-while loop when you want to execute a block of code one or more times, regardless of the initial condition.
+
+
+
+Jumping statements
+
+1. Conditional/Branching/Selection statements: These statements are used to execute specific blocks of code based on a certain condition or set of conditions. 
+They include if, if-else, switch-case, and ternary operators.2. Iteration/Looping/Repetition statements: 
+These statements are used to execute a block of code repeatedly until a certain condition is met. 
+They include for, while, and do-while loops.3. Jumping statements: 
+These statements are used to transfer control to another part of the program. 
+They include break, continue, and return statements.
+
+
+
+The goto statement
+
+
+The  goto  statement is a programming language statement that performs an unconditional jump to another point in the program. 
+It is used to transfer the control of the program from one point to another. 
+However,  goto  statements are often discouraged in modern programming practices due to their negative impact on code maintainability and readability. 
+Instead, control structures such as loops, conditional statements, and functions are recommended for better code structure and organization.
+
+
+The break statement
+
+
+Here is a solution in Pascal that searches for matrix 1 inside matrix 2 without
+ using the  break  statement: const  ROWS1 = 3;  COLS1 = 3;  ROWS2 = 5;  COLS2 = 5;type  Matrix = array[1..ROWS2, 1..COLS2] of Integer;var 
+ mat1: Matrix;  mat2: Matrix;  found: Boolean;procedure 
+InitializeMatrix1(var mat: Matrix);begin  mat[1, 1] := 1;  mat[1, 2] := 2;  mat[1, 3] := 3;  mat[2, 1] := 4;  mat[2, 2] := 5;  mat[2, 3] := 6;  mat[3, 1] := 7;  mat[3, 2] := 8;  mat[3, 3] := 9;end;procedure InitializeMatrix2(var mat: Matrix);begin  mat[1, 1] := 7;  mat[1, 2] := 8;  mat[1, 3] := 9;  mat[1, 4] := 1;  mat[1, 5] := 2;  mat[2, 1] := 3;  mat[2, 2] := 4;  mat[2, 3] := 5;  mat[2, 4] := 6;  mat[2, 5] := 7;  mat[3, 1] := 8;  mat[3, 2] := 9;  mat[3, 3] := 1;  mat[3, 4] := 2;  mat[3, 5] := 3;  mat[4, 1] := 4;  mat[4, 2] := 5;  mat[4, 3] := 6;  mat[4, 4] := 7;  mat[4, 5] := 8;  mat[5, 1] := 9;  mat[5, 2] := 1;  mat[5, 3] := 2;  mat[5, 4] := 3;  mat[5, 5] := 4;end;function CheckSubmatrix(mat1, mat2: Matrix; row, col: Integer): Boolean;var  i, j: Integer;begin  for i := 1 to ROWS1 do   
+ for j := 1 to COLS1 do      if mat1[i, j] <> mat2[row + i - 1, col + j - 1] then     
+   Exit(False);  CheckSubmatrix := True;end;begin  InitializeMatrix1(mat1); 
+ InitializeMatrix2(mat2);  found := False;  for i := 1 to ROWS2 - ROWS1 + 1 do  
+  for j := 1 to COLS2 - COLS1 + 1 do   
+   if CheckSubmatrix(mat1, mat2, i, j) then      begin        found := True;     
+   WriteLn('Matrix 1 found at position (', i, ', ', j, ') in matrix 2');  
+    end;  if not found then  
+  WriteLn('Matrix 1 not found in matrix 2');end
+
+
+The continue statement
+
+
+
+Incrementing by 1 means to increase the value of a variable by 1. 
+In the code example provided, the tick variable is initially set to 1 and is then incremented by 1 at the end of each iteration of the while loop using the expression  tick = tick + 1  or the shorthand expression  tick += 1 . 
+This means that the value of tick will increase by 1 after each iteration of the loop.
+
+
+
+Break versus continue
+
+
+ When programming, there are two main options for controlling loops: 
+break and continue. The break statement will immediately terminate the loop it is contained in, while the continue statement will skip the current iteration of the loop and move on to the next one.
+The break statement is useful when you need to exit a loop early based on a certain condition. 
+For example, if you are searching through a list and find the item you are looking for, you can use a break statement to exit the loop and stop searching. 
+However, it is important to use break statements sparingly, as they can make code harder to read and understand.On the other hand, the continue statement is useful when you want to skip over certain iterations of a loop. 
+For example, if you are iterating over a list and want to skip any items that meet a certain condition, you can use a continue statement to move on to the next item. Like break statements, it is important to use continue statements carefully and only when necessary.
+In conclusion, both break and continue statements can be useful tools for controlling loops in your code. However, it is important to use them judiciously and only when they make your code more readable and understandable.
+
+
