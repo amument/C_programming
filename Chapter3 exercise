@@ -39,18 +39,29 @@ Flowchart of the code:     
 However, it is still better to use curly braces as it makes the code more readable and easier to modify.
 
 
+
+
+
 Quiz
 
 
 
 Write a program to accept any character from keyboard and display whether it is vowel or not
 
-# Accept input from usercharacter = input("Enter a character: ")# Convert the character to lowercase for ease of comparisoncharacter = character.
-lower()# Check if the character is a vowel or notif character in ['a', 'e', 'i', 'o', 'u']:   
- print(f"{character} is a vowel")else:   
- print(f"{character} is not a vowel") 
-This program prompts the user to enter a character, converts it to lowercase for consistency, and then checks if it is one of the five vowels (a, e, i, o, or u). 
-If it is a vowel, the program prints that fact; if it is not a vowel, it also prints that fact.
+
+
+
+char = input("Enter a character: ")
+
+if char in ['a', 'e', 'i', 'o', 'u', 'A', 'E', 'I', 'O', 'U']:
+    print("The character is a vowel")
+else:
+    print("The character is not a vowel")
+
+
+In this program, we first take the user input for the character. Then we use an if statement with the "in" keyword to check if the character is present in the list of vowels (both lowercase and uppercase). If the character is present in the list, we print "The character is a vowel", else we print "The character is not a vowel".
+
+
 
 
 
@@ -135,16 +146,25 @@ Hint;accept at least thee course marks then calculate the total and average of y
 
 
 
+marks = 
+totalmarks = 0
+numofcourses = int(input("Enter the number of courses: "))
 
-# accept input for three course marksmark1 =
- int(input("Enter mark for course 1: "))
-mark2 = int(input("Enter mark for course 2: "))
-mark3 = int(input("Enter mark for course 3: "))# calculate total and averagetotal 
-= mark1 + mark2 + mark3average = total / 3# check grade statusif average >= 50:   
- status = "Pass"else:   
- status = "Fail"# display resultsprint("Total mark: ", total)print("Average mark: ", average)print("Grade status: ", status) Here's how the program works:1. 
-It accepts input for three course marks using the  input()  function.2. It calculates the total by adding the three marks together and the average by dividing the total by 3.3. It checks the grade status by using an  if  statement to see if the average is greater than or equal to 50. If it is, the status is set to "Pass", otherwise it is set to "Fail".4. It displays the total, average, and grade status using the  print()  function.
-You can run this program in a Python environment such as IDLE, or save it to a file with a  .py  extension and run it from the command line using the  python  command followed by the filename.
+for i in range(numofcourses):
+    mark = float(input(f"Enter mark for course {i+1}: "))
+    marks.append(mark)
+    totalmarks += mark
+
+average = totalmarks / numofcourses
+
+print(f"Total Marks: {totalmarks}")
+print(f"Average Mark: {average}")
+
+if average >= 50:
+    print("You have passed!")
+else:
+    print("You have failed.")
+
 
 
 
