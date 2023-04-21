@@ -56,20 +56,54 @@ If it is a vowel, the program prints that fact; if it is not a vowel, it also pr
 
 Write a program that gives grade based on the following scale using if else statement:
 
- = int(input("Enter your score: "))if score >= 90:    
-print("Your grade is A")elif score >= 80:    
-print("Your grade is B")elif score >= 70:    
-print("Your grade is C")elif score >= 60:    
-print("Your grade is D")else:    
-print("Your grade is F") 
-This program takes in a user's score as input and assigns a letter grade based on the following scale:-
- A: 90-100- B: 80-89- C: 70-79- D: 60-69- F: <60The if-elif-else statements check the user's score against each range and prints out the corresponding letter grade.
+
+
+ Score      Grade
+90-100     A
+80-89      B
+70-79      C
+60-69      D
+Below 60   F
+
+
+score = int(input("Enter your score: "))
+
+if score >= 90 and score <= 100:
+    print("Your grade is A")
+elif score >= 80 and score <= 89:
+    print("Your grade is B")
+elif score >= 70 and score <= 79:
+    print("Your grade is C")
+elif score >= 60 and score <= 69:
+    print("Your grade is D")
+else:
+    print("Your grade is F")
+
+
+In this program, we first take the user input for the score. Then we use if-elif-else statements to check the score range and print the corresponding grade. If the score is between 90 and 100, we print "A", if it's between 80 and 89, we print "B", and so on. If the score is below 60, we print "F".
+
 
 
 
 Write a program that display greatest of three numbers using if statement accept input from user
 
-# Ask the user to input three numbersnum1 = float(input("Enter first number: "))num2 = float(input("Enter second number: "))num3 = float(input("Enter third number: "))# Find the greatest number using if statementsif num1 >= num2 and num1 >= num3:    greatest = num1elif num2 >= num1 and num2 >= num3:    greatest = num2else:    greatest = num3# Display the resultprint("The greatest number is", greatest) In this program, we first ask the user to input three numbers and store them in the variables  num1 ,  num2 , and  num3 . We then use if statements to compare these numbers and find the greatest one, which we store in the variable  greatest . Finally, we display the result using the  print()  function.
+
+
+
+
+num1 = int(input("Enter first number: "))
+num2 = int(input("Enter second number: "))
+num3 = int(input("Enter third number: "))
+
+if num1 > num2 and num1 > num3:
+    print(num1, "is the greatest number")
+elif num2 > num1 and num2 > num3:
+    print(num2, "is the greatest number")
+else:
+    print(num3, "is the greatest number")
+
+
+In this program, we first take the user input for three numbers. Then we use if-elif-else statements to compare the numbers and find the greatest among them. If num1 is greater than num2 and num3, we print num1 as the greatest number. If num2 is greater than num1 and num3, we print num2 as the greatest number. Otherwise, we print num3 as the greatest number.
 
 
 
@@ -79,15 +113,20 @@ Write a program that accepts three numbers from the user and prints increasing i
 
 
 
-# Accepting three numbers from 
-usernum1 = float(input("Enter the first number: "))
-num2 = float(input("Enter the second number: "))
-num3 = float(input("Enter the third number: "))# Checking if numbers are in increasing orderif num1 < num2 and num2 < num3:   
- print("Increasing")  # Checking if numbers are in decreasing orderelif num1 > num2 and num2 > num3:  
- print("Decreasing")# Neither increasing nor decreasing orderelse:    
-print("Neither increasing nor decreasing order") 
-Note: This program assumes that the numbers are all unique. 
-If there are duplicates, the program might not give the expected output.
+num1 = int(input("Enter first number: "))
+num2 = int(input("Enter second number: "))
+num3 = int(input("Enter third number: "))
+
+if num1 < num2 < num3:
+    print("Increasing")
+elif num1 > num2 > num3:
+    print("Decreasing")
+else:
+    print("Neither increasing nor decreasing")
+
+
+In this program, we first take the user input for three numbers. Then we use if-elif-else statements to check if the numbers are in increasing order, decreasing order, or neither. If num1 is less than num2 and num2 is less than num3, we print "Increasing". If num1 is greater than num2 and num2 is greater than num3, we print "Decreasing". Otherwise, we print "Neither increasing nor decreasing".
+
 
 
 
